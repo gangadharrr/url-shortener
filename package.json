@@ -1,0 +1,19 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.0",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "turbo": "^2.10.9",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "url-shortener-shared": "link:packages/shared"
+  }
+}
