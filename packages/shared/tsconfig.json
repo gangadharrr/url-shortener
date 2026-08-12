@@ -7,7 +7,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+    "module": "node16",
     "target": "esnext",
     // For nodejs:
     "lib": ["esnext"],
@@ -33,9 +33,11 @@
 
     // Recommended Options
     "strict": true,
+    "moduleResolution": "node16",
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
-  }
+    "skipLibCheck": true
+  },
+  "exclude": ["drizzle.config.ts", "./dist/**/*"]
 }
