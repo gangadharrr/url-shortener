@@ -19,6 +19,6 @@ postgresClient.on<'error'>('error', (err: Error) => {
 	logger.error(`Unexpected error on idle Postgres pool client: ${err.cause}`);
 });
 
-export * from './schema/links.schema';
+export * from './schema';
 export * from './db.util';
 export const db = drizzle({ client: postgresClient, schema: { ...schema } });

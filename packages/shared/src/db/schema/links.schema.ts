@@ -1,5 +1,6 @@
-import { integer, pgTable, varchar, PgTableWithColumns } from "drizzle-orm/pg-core";
+import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 import { commonTimestampFields } from "../db.util";
+import { InferInsertModel, InferSelectModel } from "drizzle-orm";
 
 export const linksTable = pgTable("links", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
@@ -8,5 +9,5 @@ export const linksTable = pgTable("links", {
   ...commonTimestampFields
 });
 
-export type LinksSelect = typeof linksTable.$inferSelect;
-export type LinksInsert = typeof linksTable.$inferInsert;
+export type LinksSelect = InferSelectModel<typeof linksTable>;
+export type LinksInsert = InferInsertModel<typeof linksTable>;

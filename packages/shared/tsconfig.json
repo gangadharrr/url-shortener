@@ -7,7 +7,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "node16",
+    "module": "commonjs",
     "target": "esnext",
     // For nodejs:
     "lib": ["esnext"],
@@ -16,8 +16,6 @@
 
     // Other Outputs
     "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
@@ -33,7 +31,7 @@
 
     // Recommended Options
     "strict": true,
-    "moduleResolution": "node16",
+    "moduleResolution": "bundler",
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
