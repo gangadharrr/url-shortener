@@ -1,4 +1,4 @@
-import { integer, pgTable, uuid, varchar } from "drizzle-orm/pg-core";
+import { integer, pgTable, varchar, PgTableWithColumns } from "drizzle-orm/pg-core";
 import { commonTimestampFields } from "../db.util";
 
 export const linksTable = pgTable("links", {
